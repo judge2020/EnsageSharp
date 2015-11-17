@@ -9,6 +9,7 @@ using Ensage.Common.Extensions;
 using Ensage.Common;
 using SharpDX.Direct3D9;
 using System.Windows.Input;
+using Ensage.Common.Menu;
 
 namespace AbaddonDeny
 {
@@ -21,10 +22,13 @@ namespace AbaddonDeny
         private static Hero me;
         private static Hero target;
         private static ParticleEffect rangeDisplay;
+        private static readonly Menu Menu = new Menu("Abaddon Deny", "abaddondeny", true);
         static void Main(string[] args)
         {
             Game.OnUpdate += Game_OnUpdate;
             Console.WriteLine("Abaddon Deny loaded!");
+            Menu.AddItem(new MenuItem("toggle", "Enabled").SetValue(true).SetTooltip("Toggle Twice if it is not trying to deny"));
+            Menu.AddToMainMenu();
         }
 
         public static void Game_OnUpdate(EventArgs args)
@@ -37,6 +41,11 @@ namespace AbaddonDeny
 
             if (activated)
             {
+                if (!Menu.Item("toggle").GetValue<bool>())
+                {
+                    already = false;
+                    return;
+                }
                 if (!me.IsAlive)
                 {
                     already = false;
@@ -71,6 +80,7 @@ namespace AbaddonDeny
                     
                     if (me.Health <= qdmg && me.Health != 1 && me.Health != 0)
                     {
+                        Console.WriteLine(Menu.Item("toggle").GetValue<bool>());
                         var closestUnit =
                             ObjectMgr.GetEntities<Unit>()
                                 .Where(
