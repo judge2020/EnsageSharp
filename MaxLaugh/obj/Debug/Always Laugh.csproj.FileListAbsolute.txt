@@ -1,0 +1,3 @@
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\MaxLaugh.exe.config
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\obj\Debug\MaxLaugh.exe
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\obj\Debug\MaxLaugh.pdb

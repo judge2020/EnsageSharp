@@ -1,0 +1,13 @@
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\MaxLaugh.exe.config
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\MaxLaugh.exe
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\MaxLaugh.pdb
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\Ensage.Common.dll
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\Ensage.dll
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\SharpDX.dll
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\EnsageSharp.Sandbox.dll
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\Ensage.Common.pdb
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\bin\Debug\EnsageSharp.Sandbox.pdb
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\obj\x64\Debug\MaxLaugh.exe
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\obj\x64\Debug\MaxLaugh.pdb
+C:\Users\judge2020\Source\Repos\dota2harvester\MaxLaugh\MaxLaugh\obj\x64\Debug\Always Laugh.csprojResolveAssemblyReference.cache
