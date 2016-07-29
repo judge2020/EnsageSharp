@@ -8,7 +8,7 @@ namespace AbaddonDeny
 {
     internal class Program
     {
-        private static readonly Menu Menu = new Menu("Abaddon Deny", "abaddondeny", true);
+        private static readonly Menu Menu = new Menu("Abaddon Deny", "abaddondeny", true, "npc_dota_hero_abaddon", true); //test commit through Visual Studio
         private static void Main()
         {
             Game.OnUpdate += Game_OnUpdate;
