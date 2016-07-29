@@ -20,6 +20,7 @@ namespace AbaddonDeny
         {
             var me = ObjectManager.LocalHero;
             if (!Game.IsInGame || me.ClassID != ClassID.CDOTA_Unit_Hero_Abaddon) return;
+            if (me.IsWaitingToSpawn) return;
             if (!Menu.Item("toggle").GetValue<bool>()) return;
             var q = me.Spellbook.SpellQ;
             var qlvl = me.Spellbook.SpellQ.Level;
@@ -34,9 +35,6 @@ namespace AbaddonDeny
                 qdmg = 125;
             if (qlvl == 4)
                 qdmg = 150;
-
-            if (!Menu.Item("toggle").GetValue<bool>()) return;
-            if (!me.IsAlive) return;
             if (qdmg <= me.Health && me.Health != 1 && me.Health != 0) return;
             var closestUnit = ObjectManager.GetEntities<Unit>()
                 .Where(x =>(!x.Equals(me) && ((x is Hero && !x.IsIllusion) || (x is Creep && x.IsSpawned)) && x.IsAlive && x.IsVisible))
