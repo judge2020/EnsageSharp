@@ -36,6 +36,7 @@ namespace AbaddonDeny
             if (qlvl == 4)
                 qdmg = 150;
             if (qdmg <= me.Health && me.Health != 1 && me.Health != 0) return;
+            if (me.Health <= 1) return;
             var closestUnit = ObjectManager.GetEntities<Unit>()
                 .Where(x =>(!x.Equals(me) && ((x is Hero && !x.IsIllusion) || (x is Creep && x.IsSpawned)) && x.IsAlive && x.IsVisible))
                 .OrderBy(x => x.Distance2D(ObjectManager.LocalHero))
